@@ -21,6 +21,10 @@ interface es
 	public function confirm($paymentId, $dt);
 
 	public function cancel($paymentId);
+
+    public function verifySign($data, $sign);
+
+    public function generateSign($data);
 }
 
 ?>

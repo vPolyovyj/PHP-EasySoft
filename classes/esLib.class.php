@@ -22,6 +22,11 @@ class esLib
 		return $data['Request']['DateTime']['value'];
 	}
 
+    public static function getSign($data)
+	{
+		return $data['Request']['Sign']['value'];
+	}
+
 	public static function getAccountByOperation($data, $op)
 	{
 		return $data['Request'][$op]['Account']['value'];
